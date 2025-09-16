@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <h1 class="main-heading-decoration">Transactions and Concurrency Control</h1>
+        <div>
+            <div class="d-flex flex-row justify-content-between">
+                <p class="heading-decoration">Question-1: ~ GATE 2024 Set 1  [MSQ]</p>
+                <div>
+                    <button style="font-size:30px;" id="time1" class="btn btn-secondary mr-3"></button>
+                </div>
+            </div>
+            <div class="apply-padding box">
+                <P>Consider the following read-write schedule 𝑆 over three transactions
+                    𝑇1, 𝑇2, and 𝑇3, where the subscripts in the schedule indicate transaction IDs:
+                    𝑆: 𝑟1(𝑧); 𝑤1(𝑧); 𝑟2(𝑥); 𝑟3(𝑦); 𝑤3(𝑦); 𝑟2(𝑦); 𝑤2(𝑥); 𝑤2(𝑦);<br>
+                    Which of the following transaction schedules is/are conflict equivalent to 𝑆 ?
+                </P>
+                <div class="option">
+                    <input type="checkbox" id="q1opt1" >
+                    <label for="q1opt1">T1T2T3</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="q1opt2" >
+                    <label for="q1opt2">T1T3T2</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="q1opt3" >
+                    <label for="q1opt3">T3T2T1</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="q1opt4">
+                    <label for="q1opt4">T3T1T2</label>
+                </div>
+                <p id="cw1" class="correct-wrong"></p>
+                <p id="tt1" class="time-decoration"></p>
+                <div class="centering">
+                    <button onclick="checkAnswer()" class="btn btn-primary mt-3" id="submit1"> submit </button>
+                </div>
+            </div>
+            <div class="centering" id="answer1">
+                <button class="btn btn-secondary">click here for Answer</button>
+            </div>
+            <div style="font-size: 30px;" id="paragraph1" class="centering">
+
+            </div>
+            <div class="d-flex flex-row justify-content-between">
+                <button class="btn btn-danger" style="height:35px; margin-bottom:20px;">prev</button>
+                <a href="#question2" class="btn btn-primary" style="height:35px; ">Next</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
